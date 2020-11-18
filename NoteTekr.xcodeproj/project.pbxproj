@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,17 @@
 		7B802242255FA29900E75CD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B802241255FA29900E75CD9 /* ContentView.swift */; };
 		7B802244255FA29A00E75CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B802243255FA29A00E75CD9 /* Assets.xcassets */; };
 		7B802247255FA29A00E75CD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B802246255FA29A00E75CD9 /* Preview Assets.xcassets */; };
+		7B802255255FA8D300E75CD9 /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B802254255FA8D300E75CD9 /* NavigationConfigurator.swift */; };
+		7B80225B255FA95400E75CD9 /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B80225A255FA95400E75CD9 /* NavigationModifier.swift */; };
+		7B80225F255FAC0500E75CD9 /* NotesMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B80225E255FAC0500E75CD9 /* NotesMainView.swift */; };
+		7B802265255FAD4D00E75CD9 /* EnvObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B802264255FAD4D00E75CD9 /* EnvObj.swift */; };
+		7B802268255FAF1900E75CD9 /* NoteEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B802267255FAF1900E75CD9 /* NoteEditor.swift */; };
+		7B80226B255FB20A00E75CD9 /* CornerRadiusExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B80226A255FB20A00E75CD9 /* CornerRadiusExtension.swift */; };
+		7B80226E255FB5B700E75CD9 /* EditContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B80226D255FB5B700E75CD9 /* EditContentButton.swift */; };
+		7B802272255FDCBC00E75CD9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B802270255FDCBC00E75CD9 /* Model.xcdatamodeld */; };
+		7B802277255FDE7000E75CD9 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B802276255FDE7000E75CD9 /* PersistenceController.swift */; };
+		7B80227E2560344900E75CD9 /* Down in Frameworks */ = {isa = PBXBuildFile; productRef = 7B80227D2560344900E75CD9 /* Down */; };
+		7B80228525603F8F00E75CD9 /* MDText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B80228425603F8F00E75CD9 /* MDText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +31,16 @@
 		7B802243255FA29A00E75CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B802246255FA29A00E75CD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B802248255FA29A00E75CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B802254255FA8D300E75CD9 /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
+		7B80225A255FA95400E75CD9 /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
+		7B80225E255FAC0500E75CD9 /* NotesMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesMainView.swift; sourceTree = "<group>"; };
+		7B802264255FAD4D00E75CD9 /* EnvObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvObj.swift; sourceTree = "<group>"; };
+		7B802267255FAF1900E75CD9 /* NoteEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditor.swift; sourceTree = "<group>"; };
+		7B80226A255FB20A00E75CD9 /* CornerRadiusExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusExtension.swift; sourceTree = "<group>"; };
+		7B80226D255FB5B700E75CD9 /* EditContentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContentButton.swift; sourceTree = "<group>"; };
+		7B802271255FDCBC00E75CD9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7B802276255FDE7000E75CD9 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		7B80228425603F8F00E75CD9 /* MDText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B80227E2560344900E75CD9 /* Down in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,10 +74,13 @@
 		7B80223E255FA29900E75CD9 /* NoteTekr */ = {
 			isa = PBXGroup;
 			children = (
+				7B802253255FA8B900E75CD9 /* Helper Code */,
+				7B802251255FA2ED00E75CD9 /* Views */,
+				7B802250255FA2E300E75CD9 /* Controller */,
+				7B80224F255FA2D700E75CD9 /* Model */,
 				7B80223F255FA29900E75CD9 /* NoteTekrApp.swift */,
-				7B802241255FA29900E75CD9 /* ContentView.swift */,
-				7B802243255FA29A00E75CD9 /* Assets.xcassets */,
 				7B802248255FA29A00E75CD9 /* Info.plist */,
+				7B802243255FA29A00E75CD9 /* Assets.xcassets */,
 				7B802245255FA29A00E75CD9 /* Preview Content */,
 			);
 			path = NoteTekr;
@@ -67,6 +92,45 @@
 				7B802246255FA29A00E75CD9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B80224F255FA2D700E75CD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B802270255FDCBC00E75CD9 /* Model.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B802250255FA2E300E75CD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B802264255FAD4D00E75CD9 /* EnvObj.swift */,
+				7B802276255FDE7000E75CD9 /* PersistenceController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7B802251255FA2ED00E75CD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B802241255FA29900E75CD9 /* ContentView.swift */,
+				7B80225E255FAC0500E75CD9 /* NotesMainView.swift */,
+				7B802267255FAF1900E75CD9 /* NoteEditor.swift */,
+				7B80226D255FB5B700E75CD9 /* EditContentButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7B802253255FA8B900E75CD9 /* Helper Code */ = {
+			isa = PBXGroup;
+			children = (
+				7B802254255FA8D300E75CD9 /* NavigationConfigurator.swift */,
+				7B80225A255FA95400E75CD9 /* NavigationModifier.swift */,
+				7B80226A255FB20A00E75CD9 /* CornerRadiusExtension.swift */,
+				7B80228425603F8F00E75CD9 /* MDText.swift */,
+			);
+			path = "Helper Code";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +149,9 @@
 			dependencies = (
 			);
 			name = NoteTekr;
+			packageProductDependencies = (
+				7B80227D2560344900E75CD9 /* Down */,
+			);
 			productName = NoteTekr;
 			productReference = 7B80223C255FA29900E75CD9 /* NoteTekr.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +179,9 @@
 				Base,
 			);
 			mainGroup = 7B802233255FA29800E75CD9;
+			packageReferences = (
+				7B80227C2560344900E75CD9 /* XCRemoteSwiftPackageReference "Down" */,
+			);
 			productRefGroup = 7B80223D255FA29900E75CD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +208,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B802268255FAF1900E75CD9 /* NoteEditor.swift in Sources */,
 				7B802242255FA29900E75CD9 /* ContentView.swift in Sources */,
+				7B80226E255FB5B700E75CD9 /* EditContentButton.swift in Sources */,
+				7B802265255FAD4D00E75CD9 /* EnvObj.swift in Sources */,
+				7B80228525603F8F00E75CD9 /* MDText.swift in Sources */,
+				7B802277255FDE7000E75CD9 /* PersistenceController.swift in Sources */,
+				7B80225F255FAC0500E75CD9 /* NotesMainView.swift in Sources */,
+				7B802255255FA8D300E75CD9 /* NavigationConfigurator.swift in Sources */,
+				7B80225B255FA95400E75CD9 /* NavigationModifier.swift in Sources */,
 				7B802240255FA29900E75CD9 /* NoteTekrApp.swift in Sources */,
+				7B802272255FDCBC00E75CD9 /* Model.xcdatamodeld in Sources */,
+				7B80226B255FB20A00E75CD9 /* CornerRadiusExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +406,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B80227C2560344900E75CD9 /* XCRemoteSwiftPackageReference "Down" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iwasrobbed/Down";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B80227D2560344900E75CD9 /* Down */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B80227C2560344900E75CD9 /* XCRemoteSwiftPackageReference "Down" */;
+			productName = Down;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		7B802270255FDCBC00E75CD9 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7B802271255FDCBC00E75CD9 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7B802271255FDCBC00E75CD9 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7B802234255FA29800E75CD9 /* Project object */;
 }
