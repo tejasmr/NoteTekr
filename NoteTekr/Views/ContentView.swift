@@ -15,6 +15,7 @@ struct ContentView: View {
     
     @EnvironmentObject var envObj: EnvObj
     
+    
     var body: some View {
         
         NavigationView {

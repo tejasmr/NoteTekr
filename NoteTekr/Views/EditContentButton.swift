@@ -16,18 +16,18 @@ struct EditContentButton: View {
     
     var item: FetchedResults<NoteItem>.Element
     
-    
     @EnvironmentObject var envObj: EnvObj
-    @Binding var content: String
     
+    @Binding var content: String
     @Binding var title: String
+    @Binding var editingContent: Bool
     
     var body: some View {
         Button(action: {
-            self.envObj.editingNoteItemContent.toggle()
+            self.editingContent.toggle()
             updateItem(item)
         }) {
-            if(self.envObj.editingNoteItemContent) {
+            if(self.editingContent) {
                 Image(systemName: "square.and.arrow.down")
                     .padding(10)
                     .background(Color.blue)

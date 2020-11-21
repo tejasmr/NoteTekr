@@ -318,7 +318,7 @@ public struct MDText: View, Equatable {
     
     @ObservedObject var vm = MDTextVM()
     
-    public init(markdown: String, alignment: HorizontalAlignment = .leading) {
+    public init(markdown: String, alignment: HorizontalAlignment = .center) {
         self.markdown = markdown
         self.alignment = alignment
     }

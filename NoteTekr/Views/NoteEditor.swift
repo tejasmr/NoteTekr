@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NoteEditor: View {
+    @Environment(\.presentationMode) var presentation
     
     @Environment(\.managedObjectContext) var viewContext
     
@@ -18,6 +19,7 @@ struct NoteEditor: View {
     
     @State var content: String
     @State var title: String
+    @State var editingContent: Bool = false
     
     @State var item: FetchedResults<NoteItem>.Element
     
@@ -25,7 +27,7 @@ struct NoteEditor: View {
     var body: some View {
         VStack {
             VStack {
-                if(self.envObj.editingNoteItemContent) {
+                if(self.editingContent) {
                     HStack {
                         Text("Title: ")
                             .font(.headline)
@@ -33,22 +35,32 @@ struct NoteEditor: View {
                             .font(.headline)
                     }
                     TextEditor(text: $content)
-                        .autocapitalization(.words)
                         .disableAutocorrection(true)
                 }
                 else {
-                    VStack(alignment: .leading) {
+                    VStack(alignment: .center) {
                         MDText(markdown: content)
+                            .multilineTextAlignment(.center)
                     }
-                    .frame(alignment: .topLeading)
+                    .frame(alignment: .center)
                 }
             }
             .padding(.horizontal, 20)
             .padding(.top, 10)
         }
         .navigationBarTitle(item.title ?? "Untitled", displayMode: .inline)
+        .navigationBarBackButtonHidden(true)
         
-        .navigationBarItems(trailing: EditContentButton(item: item, content: $content, title: $title))
+        .navigationBarItems(leading: Button(action: {
+            presentation.wrappedValue.dismiss()
+            self.editingContent.toggle()
+        }) {
+            Image(systemName: "chevron.left")
+                .foregroundColor(.blue)
+                .imageScale(.large)
+        }, trailing: EditContentButton(item: item, content: $content, title: $title, editingContent: $editingContent)
+        )
+        
     }
 }
 
